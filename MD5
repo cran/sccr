@@ -1,0 +1,10 @@
+2cea984c2ceddbc2b1bfcf127a2f15eb *DESCRIPTION
+df390c53434517b304ac5db487184641 *NAMESPACE
+4454001006e85bdc9ea94430fae4752c *R/alpha.R
+1e90f8c5d94c40a81b62f0fabe7e4c00 *R/survCompeting.R
+06a90f126fe9fbe880a295b72fd4817b *build/partial.rdb
+004ad70a87605937882cd96f07d3ff78 *data/censoredMatrix.rda
+1e7d74e3412e3c7b2008daee89a6be98 *man/alpha.Rd
+c331351126d6198b4463963d04ea5190 *man/censoredMatrix.Rd
+dee8fdb95e6bbfffcf1f12e011d794a8 *man/sccr-package.Rd
+9e450e51e94123beec313eec1c0d4262 *man/survCompeting.Rd
