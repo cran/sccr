@@ -1,10 +1,12 @@
 \name{survCompeting}
 \alias{survCompeting}
 
-\title{Self-Consistent, Competing Risks (SC-CR) Algorithm}
+\title{Self-Consistent, Competing Risks (SC-CR) Algorithms}
 
 \description{
-The SC-CR Algorithms (which stands for Self-Consistent, Competing Risks Algorithms) are a class of algorithms designed to estimate, in a fully nonparametric manner, the failure probabilities for each cause in a competing risks environment.  We present the interval-censored form here.  Starting with an initial matrix of failure probabilities for each time point and competing risk, the algorithm iterates until the discrepancy between all time points and risks is less than some predetermined tolerance of error, epsilon.  When probabilities converge to non-zero values, these are called "cause-specific innermost intervals".  Masking, which can be defined as lack of certitude in the exact cause of failure, is permitted for this algorithm.  Finally, although we provide decidedly self-consistent estimators for each of the incidence functions, it is also strongly suspected that the estimators are also nonparametric maximum likelihood estimators as well.}
+This package describes an algorithm for producing fully non-parametric and self-consistent estimators of the cause-specific failure probabilities in the presence of interval-censoring and possible masking of the failure cause in a competing risks environment.   It is a generalization of Turnbull's (1976) classic univariate algorithm.  
+The algorithm was published in Adamic et al. (2010) and Adamic & Caron (2014).
+}
 
 \usage{
 survCompeting(data, tau, n, nc, epsilon)
@@ -51,7 +53,9 @@ Journal of the Royal Statistical Society. Series B (Methodological), 38(3), 290-
 
 \examples{
 data(censoredMatrix)
-res <- survCompeting(censoredMatrix, 2:9, 8, 3, 0.01)
+df <- inputM(censoredMatrix)
+
+res <- survCompeting(df$input, df$tau, 8, 3, 0.01)
 res
 
 #summary

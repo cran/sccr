@@ -1,15 +1,23 @@
 \name{censoredMatrix}
 \alias{censoredMatrix}
-
+\docType{data}
 \title{
-The matrix of probabilities}
-
+The double-censored data.
+}
 \description{
-The matrix of probabilities corresponding double-censored data of the form: \cr
-(0,3]; (2,5] (c = 1); [4,4] (c = 2); (2, inf), (6,7]; (3,inf) (c=3); \cr
-(6,8] (c=1 or c=2 or c=3) [9,9] \cr
-c - the number of couse = 1,2,3}
+A data frame with 8 observations on the following 6 variables.
+}
+\format{
+  \describe{
+    \item{\code{L}}{a numeric vector}
+    \item{\code{R}}{a numeric vector}
+    \item{\code{C1}}{a numeric vector}
+    \item{\code{C2}}{a numeric vector}
+    \item{\code{C3}}{a numeric vector}
+  }
+}
 
 \examples{
 data(censoredMatrix)
+str(censoredMatrix)
 }

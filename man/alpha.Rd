@@ -20,5 +20,7 @@ Scandinavian Actuarial Journal, 2014(4), 339-351.
 
 \examples{
 data(censoredMatrix)
-alpha(censoredMatrix, 2:9)
+res <- inputM(censoredMatrix)
+
+alpha(res$input, res$tau)
 }
