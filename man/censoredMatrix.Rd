@@ -2,10 +2,10 @@
 \alias{censoredMatrix}
 \docType{data}
 \title{
-The double-censored data.
+The double-censored data
 }
 \description{
-A data frame with 8 observations on the following 6 variables.
+A data frame with 8 observations on the following 5 variables.
 }
 \format{
   \describe{

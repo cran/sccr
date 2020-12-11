@@ -2,7 +2,7 @@
 \alias{inputM}
 
 \title{
-The probability matrix creator.}
+The probability matrix creator}
 
 \description{
 The function creating the probability matrix and tau time vector from the double-censored data.
